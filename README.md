@@ -1,6 +1,6 @@
-# lanchonete
+# Pizzaria
 
-Projeto experimental de app para lanchonete
+Experimental app project for service in Pizzeria, facilitating and making service even faster, integrated with mobile technology.
 
 ## Getting Started
 
