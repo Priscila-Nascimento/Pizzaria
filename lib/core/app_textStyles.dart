@@ -8,4 +8,22 @@ class AppTextStyles {
     fontSize: 18,
     fontWeight: FontWeight.bold,
   );
+
+  static const TextStyle statusMesa = TextStyle(
+    color: Colors.white,
+    fontSize: 16,
+    fontWeight: FontWeight.bold,
+  );
+
+  static const TextStyle numeroMesa = TextStyle(
+    color: Colors.white,
+    fontSize: 38,
+    fontWeight: FontWeight.bold,
+  );
+
+  static const TextStyle valorMesa = TextStyle(
+    color: Colors.white,
+    fontSize: 16,
+    fontWeight: FontWeight.bold,
+  );
 }
