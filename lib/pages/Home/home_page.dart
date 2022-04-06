@@ -1,9 +1,8 @@
+import 'package:Pizzaria/pages/Configura%C3%A7%C3%A3o/config_page.dart';
+import 'package:Pizzaria/pages/Home/tela_inicial.dart';
+import 'package:Pizzaria/pages/Itens/itens_page.dart';
+import 'package:Pizzaria/pages/Mesas/mesas_pages.dart';
 import 'package:flutter/material.dart';
-import 'package:lanchonete/core/app_textStyles.dart';
-import 'package:lanchonete/pages/Configura%C3%A7%C3%A3o/config_page.dart';
-import 'package:lanchonete/pages/Home/tela_inicial.dart';
-import 'package:lanchonete/pages/Itens/itens_page.dart';
-import 'package:lanchonete/pages/Mesas/mesas_pages.dart';
 
 enum Paginas { inicio, mesas, itens, configuracao } //NavigationBar
 

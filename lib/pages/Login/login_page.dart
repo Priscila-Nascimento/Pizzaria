@@ -1,5 +1,5 @@
+import 'package:Pizzaria/core/app_imagens.dart';
 import 'package:flutter/material.dart';
-import 'package:lanchonete/pages/Home/home_page.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -12,7 +12,7 @@ class LoginPage extends StatelessWidget {
             color: Colors.white,
             child: ListView(children: <Widget>[
               SizedBox(
-                child: Image.asset("assets/images/logo.png"),
+                child: Image.asset(AppImagens.logo),
               ),
               Container(
                   height: MediaQuery.of(context).size.height / 2,
@@ -80,12 +80,7 @@ class LoginPage extends StatelessWidget {
                           ],
                         ),
                         onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => HomePage(),
-                            ),
-                          );
+                          Navigator.of(context).pushReplacementNamed('/home');
                         },
                       ),
                     ),

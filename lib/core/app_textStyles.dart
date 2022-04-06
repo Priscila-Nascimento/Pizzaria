@@ -8,7 +8,11 @@ class AppTextStyles {
     fontSize: 18,
     fontWeight: FontWeight.bold,
   );
-
+  static const TextStyle textoWhite = TextStyle(
+    color: Colors.white,
+    fontSize: 18,
+    fontWeight: FontWeight.bold,
+  );
   static const TextStyle statusMesa = TextStyle(
     color: Colors.white,
     fontSize: 16,

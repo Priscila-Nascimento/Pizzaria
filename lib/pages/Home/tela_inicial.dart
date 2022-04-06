@@ -1,3 +1,4 @@
+import 'package:Pizzaria/core/app_imagens.dart';
 import 'package:flutter/material.dart';
 
 class Telainicial extends StatelessWidget {
@@ -10,7 +11,7 @@ class Telainicial extends StatelessWidget {
         color: Colors.white,
         child: ListView(children: <Widget>[
           SizedBox(
-            child: Image.asset("assets/images/logo.png"),
+            child: Image.asset(AppImagens.logo),
           ),
           Container(
               height: MediaQuery.of(context).size.height / 2,

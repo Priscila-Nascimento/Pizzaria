@@ -1,9 +1,8 @@
+import 'package:Pizzaria/Categorias/categorias_page.dart';
+import 'package:Pizzaria/core/theme.dart';
+import 'package:Pizzaria/pages/Home/home_page.dart';
+import 'package:Pizzaria/pages/Login/login_page.dart';
 import 'package:flutter/material.dart';
-import 'package:lanchonete/core/app_colors.dart';
-import 'package:lanchonete/core/theme.dart';
-import 'package:lanchonete/pages/Home/home_page.dart';
-import 'package:lanchonete/pages/Login/login_page.dart';
-import 'package:lanchonete/pages/Login/login_page.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -14,7 +13,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Pizzaria',
       theme: tema,
-      home: LoginPage(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => LoginPage(),
+        '/home': (context) => HomePage(),
+        '/categorias': (context) => CategoriasPage(
+              numeroMesa: ModalRoute.of(context)!.settings.arguments as int,
+            ),
+      },
     );
   }
 }

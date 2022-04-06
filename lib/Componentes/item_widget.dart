@@ -1,6 +1,7 @@
+import 'package:Pizzaria/core/app_textStyles.dart';
 import 'package:flutter/material.dart';
-import 'package:lanchonete/core/app_colors.dart';
-import 'package:lanchonete/core/app_textStyles.dart';
+
+import '../core/app_colors.dart';
 
 enum StatusMesa { ocupada, livre, fechamento }
 
@@ -47,35 +48,44 @@ class ItemWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-          color: statusToColor(status),
-          borderRadius: BorderRadius.all(Radius.circular(12)),
-          boxShadow: [
-            BoxShadow(
-              offset: Offset(3.0, 3.0),
-              color: Colors.black,
-              blurRadius: 3.0,
-            )
-          ]),
-      width: 100,
-      height: 100,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text(
-            statusToString(status),
-            style: AppTextStyles.statusMesa,
-          ),
-          Text(
-            '${index.toString().padLeft(2, '0')}',
-            style: AppTextStyles.numeroMesa,
-          ),
-          Text(
-            '${valor.toStringAsFixed(2)}',
-            style: AppTextStyles.valorMesa,
-          ),
-        ],
+    return GestureDetector(
+      onTap: () {
+        if (status == StatusMesa.livre) {
+          Navigator.of(context).pushNamed('/categorias', arguments: index);
+        } else {
+          print('navegando para a tela de consumo');
+        }
+      },
+      child: Container(
+        decoration: BoxDecoration(
+            color: statusToColor(status),
+            borderRadius: BorderRadius.all(Radius.circular(12)),
+            boxShadow: [
+              BoxShadow(
+                offset: Offset(3.0, 3.0),
+                color: Colors.black,
+                blurRadius: 3.0,
+              )
+            ]),
+        width: 100,
+        height: 100,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              statusToString(status),
+              style: AppTextStyles.statusMesa,
+            ),
+            Text(
+              '${index.toString().padLeft(2, '0')}',
+              style: AppTextStyles.numeroMesa,
+            ),
+            Text(
+              '${valor.toStringAsFixed(2)}',
+              style: AppTextStyles.valorMesa,
+            ),
+          ],
+        ),
       ),
     );
   }
