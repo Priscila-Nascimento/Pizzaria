@@ -1,4 +1,5 @@
 import 'package:Pizzaria/core/app_imagens.dart';
+import 'package:Pizzaria/core/app_textStyles.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -42,42 +43,29 @@ class LoginPage extends StatelessWidget {
                       ),
                     ),
                     SizedBox(
-                      height: 40,
+                      height: 50,
                     ),
                     Container(
+                      width: 400,
                       height: 60,
-                      alignment: Alignment.bottomCenter,
-                      decoration: BoxDecoration(
+                      decoration: const ShapeDecoration(
+                        shape: StadiumBorder(),
                         gradient: LinearGradient(
                           begin: Alignment.topLeft,
                           end: Alignment.bottomRight,
-                          stops: [0.3, 1],
+                          stops: [0.2, 1],
                           colors: [
                             Color(0xFFcb161b),
                             Color.fromARGB(255, 90, 3, 6),
                           ],
                         ),
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(50),
-                        ),
                       ),
-                      child: FlatButton(
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: <Widget>[
-                            Container(
-                                child: Center(
-                              widthFactor:
-                                  6.8, //Life is made of difficulties, make them easier :)
-                              child: Text(
-                                'Login'.toUpperCase(),
-                                style: TextStyle(
-                                    height: 2,
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                            ))
-                          ],
+                      child: MaterialButton(
+                        materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                        shape: const StadiumBorder(),
+                        child: const Text(
+                          'LOGIN',
+                          style: AppTextStyles.ButtonWhite,
                         ),
                         onPressed: () {
                           Navigator.of(context).pushReplacementNamed('/home');

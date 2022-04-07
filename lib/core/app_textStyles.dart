@@ -30,4 +30,19 @@ class AppTextStyles {
     fontSize: 16,
     fontWeight: FontWeight.bold,
   );
+  static const TextStyle ButtonWhite = TextStyle(
+    color: Colors.white,
+    fontSize: 18,
+    fontWeight: FontWeight.bold,
+  );
+  static const TextStyle ButtonWhite2 = TextStyle(
+    color: Colors.white,
+    fontSize: 16,
+    fontWeight: FontWeight.bold,
+  );
+  static const TextStyle texto = TextStyle(
+    color: Colors.black,
+    fontSize: 18,
+    fontWeight: FontWeight.bold,
+  );
 }

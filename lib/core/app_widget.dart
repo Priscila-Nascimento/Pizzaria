@@ -1,5 +1,6 @@
 import 'package:Pizzaria/Categorias/categorias_page.dart';
 import 'package:Pizzaria/core/theme.dart';
+import 'package:Pizzaria/pages/Consumo/consumo_page.dart';
 import 'package:Pizzaria/pages/Home/home_page.dart';
 import 'package:Pizzaria/pages/Login/login_page.dart';
 import 'package:flutter/material.dart';
@@ -18,6 +19,9 @@ class MyApp extends StatelessWidget {
         '/': (context) => LoginPage(),
         '/home': (context) => HomePage(),
         '/categorias': (context) => CategoriasPage(
+              numeroMesa: ModalRoute.of(context)!.settings.arguments as int,
+            ),
+        '/consumo': (context) => ConsumoPage(
               numeroMesa: ModalRoute.of(context)!.settings.arguments as int,
             ),
       },

@@ -1,4 +1,5 @@
 import 'package:Pizzaria/core/app_imagens.dart';
+import 'package:Pizzaria/core/app_textStyles.dart';
 import 'package:flutter/material.dart';
 
 class Telainicial extends StatelessWidget {
@@ -44,41 +45,26 @@ class Telainicial extends StatelessWidget {
                   height: 40,
                 ),
                 Container(
+                  width: 170,
                   height: 50,
-                  width: 150,
-                  alignment: Alignment.bottomCenter,
-                  decoration: BoxDecoration(
+                  decoration: const ShapeDecoration(
+                    shape: StadiumBorder(),
                     gradient: LinearGradient(
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
-                      stops: [0.3, 1],
+                      stops: [0.2, 1],
                       colors: [
                         Color(0xFFcb161b),
                         Color.fromARGB(255, 90, 3, 6),
                       ],
                     ),
-                    borderRadius: BorderRadius.all(
-                      Radius.circular(50),
-                    ),
                   ),
-                  child: FlatButton(
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: <Widget>[
-                        Container(
-                            child: Center(
-                          widthFactor:
-                              1.3, //Life is made of difficulties, make them easier :)
-                          child: Text(
-                            'Inserir Item'.toUpperCase(),
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                                height: 2,
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold),
-                          ),
-                        ))
-                      ],
+                  child: MaterialButton(
+                    materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                    shape: const StadiumBorder(),
+                    child: const Text(
+                      'INSERIR ITEM',
+                      style: AppTextStyles.ButtonWhite2,
                     ),
                     onPressed: () {},
                   ),
@@ -87,40 +73,26 @@ class Telainicial extends StatelessWidget {
                   height: 20,
                 ),
                 Container(
+                    width: 170,
                     height: 50,
-                    width: 150,
-                    alignment: Alignment.bottomCenter,
-                    decoration: BoxDecoration(
+                    decoration: const ShapeDecoration(
+                      shape: StadiumBorder(),
                       gradient: LinearGradient(
                         begin: Alignment.topLeft,
                         end: Alignment.bottomRight,
-                        stops: [0.3, 1],
+                        stops: [0.2, 1],
                         colors: [
                           Color(0xFFcb161b),
                           Color.fromARGB(255, 90, 3, 6),
                         ],
                       ),
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(50),
-                      ),
                     ),
-                    child: FlatButton(
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: <Widget>[
-                          Container(
-                              child: Center(
-                            widthFactor:
-                                1.2, //Life is made of difficulties, make them easier :)
-                            child: Text(
-                              'Ver Detalhes'.toUpperCase(),
-                              style: TextStyle(
-                                  height: 2,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold),
-                            ),
-                          ))
-                        ],
+                    child: MaterialButton(
+                      materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                      shape: const StadiumBorder(),
+                      child: const Text(
+                        'VER DETALHES',
+                        style: AppTextStyles.ButtonWhite2,
                       ),
                       onPressed: () {},
                     ))

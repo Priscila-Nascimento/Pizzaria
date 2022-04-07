@@ -8,7 +8,7 @@ class MesasPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.all(15.0),
+        padding: const EdgeInsets.all(10.0),
         child: GridView(
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 3,
@@ -16,7 +16,7 @@ class MesasPage extends StatelessWidget {
             crossAxisSpacing: 17,
           ),
           children: [
-            ItemWidget(status: StatusMesa.ocupada, index: 1, valor: 35),
+            ItemWidget(status: StatusMesa.ocupada, index: 1, valor: 35.40),
             ItemWidget(status: StatusMesa.livre, index: 2, valor: 0),
             ItemWidget(status: StatusMesa.fechamento, index: 3, valor: 150),
             ItemWidget(status: StatusMesa.livre, index: 4, valor: 0),

@@ -53,7 +53,7 @@ class ItemWidget extends StatelessWidget {
         if (status == StatusMesa.livre) {
           Navigator.of(context).pushNamed('/categorias', arguments: index);
         } else {
-          print('navegando para a tela de consumo');
+          Navigator.of(context).pushNamed('/consumo', arguments: index);
         }
       },
       child: Container(
@@ -81,7 +81,9 @@ class ItemWidget extends StatelessWidget {
               style: AppTextStyles.numeroMesa,
             ),
             Text(
-              '${valor.toStringAsFixed(2)}',
+              '${valor.toStringAsFixed(
+                2,
+              )}',
               style: AppTextStyles.valorMesa,
             ),
           ],
