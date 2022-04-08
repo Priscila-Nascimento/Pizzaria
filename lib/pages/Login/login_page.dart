@@ -2,6 +2,8 @@ import 'package:Pizzaria/core/app_imagens.dart';
 import 'package:Pizzaria/core/app_textStyles.dart';
 import 'package:flutter/material.dart';
 
+//Não contém API no projeto para que seja utilizada para inserção do colaborador que utilizará o serviço.
+
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
 

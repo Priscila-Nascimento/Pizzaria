@@ -1,6 +1,7 @@
 import 'package:Pizzaria/core/app_textStyles.dart';
 import 'package:flutter/material.dart';
 
+//Não contém API no projeto para que seja utilizada para verificação do consumo das mesas.
 class ConsumoPage extends StatelessWidget {
   final int numeroMesa;
   const ConsumoPage({

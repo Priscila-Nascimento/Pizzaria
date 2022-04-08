@@ -2,6 +2,7 @@ import 'package:Pizzaria/core/app_imagens.dart';
 import 'package:Pizzaria/core/app_textStyles.dart';
 import 'package:flutter/material.dart';
 
+//Não contém API no projeto.
 class Telainicial extends StatelessWidget {
   const Telainicial({Key? key}) : super(key: key);
 

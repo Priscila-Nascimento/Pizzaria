@@ -3,6 +3,7 @@
 import 'package:Pizzaria/core/app_imagens.dart';
 import 'package:Pizzaria/core/app_textStyles.dart';
 import 'package:flutter/material.dart';
+//Não contém API no projeto para que seja utilizada para verificação dos itens para serem consumidos, sendo assim foi feito um demonstrativo de como a pagina irá se comportar.
 
 class CategoriasPage extends StatelessWidget {
   final int numeroMesa;

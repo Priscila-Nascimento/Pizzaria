@@ -4,6 +4,8 @@ import 'package:Pizzaria/pages/Itens/itens_page.dart';
 import 'package:Pizzaria/pages/Mesas/mesas_pages.dart';
 import 'package:flutter/material.dart';
 
+//Não contém API no projeto para que seja utilizada para inserir os itens consumidos.
+
 enum Paginas { inicio, mesas, itens, configuracao } //NavigationBar
 
 class HomePage extends StatefulWidget {

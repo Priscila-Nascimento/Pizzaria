@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import '../../Componentes/item_widget.dart';
 
+//Não contém API no projeto para que seja utilizada para verificação do consumo e status das mesas.
+
 class MesasPage extends StatelessWidget {
   const MesasPage({Key? key}) : super(key: key);
 
