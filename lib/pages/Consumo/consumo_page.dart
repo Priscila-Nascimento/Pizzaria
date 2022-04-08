@@ -11,7 +11,7 @@ class ConsumoPage extends StatelessWidget {
 
   _buildList() {
     return ListView.builder(
-        itemCount: 20,
+        itemCount: 2,
         itemBuilder: (context, index) {
           return ListTile(
             title: Text(
@@ -71,7 +71,7 @@ class ConsumoPage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           Text(
-            'Total 12',
+            'Total: R\$10',
             style: AppTextStyles.texto,
           )
         ],
